@@ -19,6 +19,7 @@ body {
 	height: 69px;
 	background-color: black;
 	top: 0;
+	left: 0;
 }
 
 #header img {
@@ -28,15 +29,19 @@ body {
 }
 
 nav span {
-	display: inline-block;
+	display: inline-flex;
 	text-decoration: underline;
 	padding: 20px;
+	justify-content: flex-end;
 }
 
 nav a {
-	align-items: right;
-	justify-content: right;
 	color: seashell;
+	justify-content: flex-end;
+}
+
+#nav {
+	align-items: right;
 }
 
 #hero {
@@ -54,9 +59,33 @@ nav a {
 	height: 100px;
 	width: 1200px;
 	text-align: center;
-	vertical-align: middle;
-	justify-content: center;
 }
 #mission h4{
 	margin: -15px;
+}
+
+#mission h4, #mission h2 {
+	align-content: : center;
+}
+
+#featured {
+	width: 1000px;
+}
+
+#featured h3, #featured h4 {
+	text-align: center;
+}
+
+.gallery {
+	justify-content: space-between;
+
+}
+
+.gallery img {
+	height: 200px;
+	width: 300px;
+}
+
+.gallery h4 {
+	margin-top: 10px;
 }
