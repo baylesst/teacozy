@@ -1,0 +1,62 @@
+body {
+	font-family: Helvetica, Arial, Sans-serif;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+}
+
+.flex-container {
+	display: flex;
+}
+
+#header {
+	display: flex;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	border-bottom: 1px solid seashell;
+	height: 69px;
+	background-color: black;
+	top: 0;
+}
+
+#header img {
+	padding: 9.5px 0px 9.5px 10px;
+	justify-content: flex-start;
+	height: 50px;
+}
+
+nav span {
+	display: inline-block;
+	text-decoration: underline;
+	padding: 20px;
+}
+
+nav a {
+	align-items: right;
+	justify-content: right;
+	color: seashell;
+}
+
+#hero {
+	height: 700px;
+	width: 1200px;
+	position: relative;
+}
+
+#mission {
+	display: inline-block;
+	background-color: black;
+	position: absolute;
+	margin-top: 300px;
+	margin-bottom: 300px;
+	height: 100px;
+	width: 1200px;
+	text-align: center;
+	vertical-align: middle;
+	justify-content: center;
+}
+#mission h4{
+	margin: -15px;
+}
