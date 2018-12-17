@@ -20,15 +20,18 @@ body {
 	background-color: black;
 	top: 0;
 	left: 0;
+	align-items: center;
+	text-align: right;
 }
 
 #header img {
+	display: inline-flex;
 	padding: 9.5px 0px 9.5px 10px;
 	justify-content: flex-start;
 	height: 50px;
 }
 
-nav span {
+.nav span {
 	display: inline-flex;
 	text-decoration: underline;
 	padding: 20px;
@@ -37,55 +40,107 @@ nav span {
 
 nav a {
 	color: seashell;
-	justify-content: flex-end;
-}
-
-#nav {
-	align-items: right;
 }
 
 #hero {
-	height: 700px;
-	width: 1200px;
+	display: flex;
 	position: relative;
+	height: 700px;
+	width: 100%;
 }
 
 #mission {
-	display: inline-block;
-	background-color: black;
 	position: absolute;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: black;
 	margin-top: 300px;
-	margin-bottom: 300px;
 	height: 100px;
 	width: 1200px;
 	text-align: center;
-}
-#mission h4{
-	margin: -15px;
+	align-content: center;
 }
 
 #mission h4, #mission h2 {
-	align-content: : center;
+	margin: -50px;
 }
 
-#featured {
-	width: 1000px;
+.featured {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
-#featured h3, #featured h4 {
+.featured h2, .featured h4 {
 	text-align: center;
+	margin: 10px;
 }
 
 .gallery {
-	justify-content: space-between;
-
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	justify-content: space-evenly;
 }
 
-.gallery img {
+#gal-entry {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+#gal-entry img {
 	height: 200px;
 	width: 300px;
+
 }
 
-.gallery h4 {
+.gal-entry h4 {
 	margin-top: 10px;
+}
+
+.location-section {
+	display: flex;
+	position: relative;
+	height: 500px;
+	width: 100%;
+	justify-content: center;
+
+}
+
+.location-section img {
+	object-fit: fill;
+}
+
+
+.locations {
+	display: inline-flex;
+	position: absolute;
+	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
+}
+
+#loc {
+	display: inline-flex;
+	flex-direction: column;
+	background-color: black;
+	text-align: center;
+	margin: 20px;
+	width: 300px;
+	opacity: 1;
+	padding: 20px;
+}
+
+.contact {
+	height: 200px;
+	text-align: center;
+}
+
+.copyright {
+	padding-left: 20px;
 }
